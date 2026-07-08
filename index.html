@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== SEO ===== -->
+  <title>Cardiologue à Fès – Pr Nada EL KHORB | Cabinet de Cardiologie Interventionnelle</title>
+  <meta name="description" content="Cabinet de cardiologie du Pr Nada EL KHORB à Fès : ECG, échographie cardiaque, test d'effort, Holter, coronarographie. Bled Sehrij, à côté de la Clinique El Qods. Tél : 05 35 93 01 61.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#b3003c">
+  <!-- Remplacer par l'URL finale du site une fois hébergé -->
+  <link rel="canonical" href="https://www.example.com/">
+
+  <!-- Partage réseaux sociaux (Open Graph) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Cardiologue à Fès – Pr Nada EL KHORB">
+  <meta property="og:description" content="Prévention, diagnostic et prise en charge cardiovasculaire à Fès. Consultation sur rendez-vous.">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="ar_MA">
+  <meta property="og:image" content="logo.png">
+
+  <!-- Favicon (utilise le logo existant) -->
+  <link rel="icon" href="logo.png" type="image/png">
+
+  <!-- Données structurées : aide Google à afficher le cabinet (recherche locale) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Pr Nada EL KHORB",
+    "description": "Professeur de cardiologie, cardiologue interventionnelle à Fès.",
+    "medicalSpecialty": "Cardiovascular",
+    "image": "logo.png",
+    "telephone": ["+212535930161", "+212767902659"],
+    "email": "nadaelkhorb@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Espace Bureaux EL GHALI, Bureau N° 2, 1er étage, Bled Sehrij",
+      "addressLocality": "Fès",
+      "addressCountry": "MA"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "12:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "14:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "08:00", "closes": "14:00" }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --primary: #b3003c;
+      --primary-light: #fbe8ee;
+      --dark: #222;
+      --text: #333;
+      --bg: #ffffff;
+      --muted: #6b6b6b;
+      --card-bg: #ffffff;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --radius-lg: 18px;
+      --radius-md: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f6fa;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* Liens téléphone / email bien visibles et cliquables */
+    a.contact-link {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    a.contact-link:hover { text-decoration: underline; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    .top-bar {
+      padding: 4px 8%;
+      font-size: 0.85rem;
+      background: var(--primary);
+      color: #fff;
+      text-align: center;
+    }
+    .top-bar a { color: #fff; font-weight: 700; text-decoration: underline; }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 8%;
+      gap: 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-logo-img {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--primary);
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(179,0,60,0.18);
+      flex-shrink: 0;
+    }
+
+    .brand-text {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .brand-text .brand-name {
+      display: block;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--dark);
+    }
+    .brand-text-ar { text-align: right; }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a:focus-visible {
+      border-bottom: 2px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .nav-cta {
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(179,0,60,0.35);
+      white-space: nowrap;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+    }
+
+    .hero {
+      padding: 40px 8% 50px;
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1.4fr);
+      gap: 40px;
+      align-items: center;
+      background: radial-gradient(circle at top left, var(--primary-light), #f5f6fa 50%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid #f1c9d7;
+      font-size: 0.8rem;
+      margin-bottom: 14px;
+    }
+
+    .hero h1 { font-size: clamp(2rem, 2.8vw, 2.8rem); color: var(--dark); }
+    .hero h1 span { color: var(--primary); }
+    .hero-subtitle { font-size: 1rem; color: var(--muted); margin-bottom: 22px; }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 16px rgba(179,0,60,0.35);
+      text-align: center;
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: var(--primary);
+      padding: 11px 20px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      cursor: pointer;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    section { padding: 50px 8%; }
+    .section-title { font-size: 1.5rem; color: var(--dark); }
+    .section-subtitle { color: var(--muted); margin-bottom: 24px; }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius-lg);
+      padding: 20px 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .video-section { background: #fff; }
+
+    .video-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    .video-card {
+      overflow: hidden;
+      padding: 0;
+      border: 1px solid rgba(179,0,60,0.08);
+    }
+
+    .cabinet-video {
+      display: block;
+      width: 100%;
+      max-height: 620px;
+      background: #111;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    }
+
+    .video-caption {
+      padding: 16px 18px 18px;
+      color: var(--muted);
+      font-size: 0.95rem;
+      background: #fff;
+    }
+
+    /* Liste des domaines de compétence : bilingue FR / AR */
+    .domaines-list {
+      list-style: none;
+    }
+    .domaines-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 16px;
+      padding: 9px 4px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .domaines-list li:last-child { border-bottom: none; }
+    .domaines-list li::before {
+      content: "❤";
+      color: var(--primary);
+      font-size: 0.75rem;
+      margin-inline-end: 4px;
+      flex-shrink: 0;
+      align-self: center;
+    }
+    .domaines-list .fr { flex: 1; }
+    .domaines-list .ar {
+      direction: rtl;
+      text-align: right;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .infos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .map-link {
+      display: inline-block;
+      margin-top: 12px;
+      color: var(--primary);
+      font-weight: 600;
+      border: 1px solid var(--primary);
+      border-radius: 999px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      padding: 18px 8% 22px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #f1f3f7;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    footer a { color: var(--primary); font-weight: 500; }
+
+    @media (max-width: 900px) {
+      .nav {
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+
+      .brand { flex-wrap: wrap; }
+
+      .nav-links {
+        order: 3;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        gap: 16px;
+      }
+
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .domaines-list li {
+        flex-direction: column;
+        gap: 2px;
+      }
+      .domaines-list .ar { align-self: flex-end; }
+    }
+
+    @media (max-width: 600px) {
+      .top-bar, .nav, section, footer {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .brand-text .brand-name { font-size: 0.95rem; }
+      .brand-text { font-size: 0.78rem; }
+
+      .nav-cta, .btn-primary, .btn-outline { width: 100%; }
+
+      .hero { padding-top: 28px; }
+
+      .cabinet-video { max-height: 520px; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="top-bar">
+    Consultation sur rendez-vous – Urgences cardiologiques : <a href="tel:+212767902659">07 67 90 26 59</a>
+  </div>
+
+  <div class="nav">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Pr Nada EL KHORB</span>
+        Professeur de cardiologie<br>
+        Cardiologue Interventionnelle
+      </div>
+
+      <img src="logo.png" class="brand-logo-img" alt="Logo du cabinet de cardiologie du Pr Nada El Khorb" width="52" height="52">
+
+      <div class="brand-text brand-text-ar" lang="ar" dir="rtl">
+        <span class="brand-name">البروفيسور ندى الخرب</span>
+        أستاذة إختصاصية في أمراض القلب و الشرايين<br>
+        إختصاصية في قسطرة القلب
+      </div>
+    </div>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#a-propos">À propos</a>
+      <a href="#video-cabinet">Vidéo</a>
+      <a href="#domaines">Domaines</a>
+      <a href="#infos">Infos pratiques</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="nav-cta" href="#contact">Prendre rendez-vous</a>
+  </div>
+</header>
+
+<main>
+
+<section id="accueil" class="hero">
+  <div>
+    <div class="hero-badge">
+      <span>Suivi personnalisé des maladies cardiovasculaires</span>
+    </div>
+
+    <h1>Cabinet de cardiologie du <span>Pr Nada EL KHORB</span></h1>
+    <p class="hero-subtitle">
+      Prévention, diagnostic et prise en charge cardiovasculaire à Fès.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn-primary" href="#contact">Demander un rendez-vous</a>
+      <a class="btn-outline" href="#video-cabinet">Voir la vidéo du cabinet</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Consultations et examens au cabinet</h2>
+    <p>Le cabinet est équipé pour réaliser les examens courants : ECG, échographie cardiaque, test d'effort, Holter ECG et Holter tensionnel (MAPA).</p>
+  </div>
+</section>
+
+<!-- VIDÉO DU CABINET -->
+<section id="video-cabinet" class="video-section">
+  <div class="video-wrapper">
+    <h2 class="section-title">Visite du cabinet</h2>
+    <p class="section-subtitle">
+      Découvrez en vidéo l'espace de consultation et l'environnement d'accueil du cabinet.
+    </p>
+
+    <div class="card video-card">
+      <video class="cabinet-video" controls preload="metadata" playsinline poster="videos/poster.jpg">
+        <source src="videos/v1_C.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture vidéo.
+      </video>
+      <p class="video-caption">
+        Vidéo de présentation du Cabinet de Cardiologie – Pr Nada EL KHORB.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- À PROPOS -->
+<section id="a-propos">
+  <h2 class="section-title">À propos</h2>
+  <p class="section-subtitle">Pr Nada EL KHORB – Cardiologue Interventionnelle</p>
+
+  <div class="card">
+    <p>
+      Cardiologue Interventionnelle installée dans la ville de Fès, le Pr Nada EL KHORB assure une prise en charge complète
+      des maladies cardiovasculaires : dépistage, suivi, traitement et éducation thérapeutique.
+      Le cabinet est idéalement situé au 1er étage, Bureau N° 2, Bled Sehrij, à côté de la Clinique El Qods et du Centre Régional d'Investissement.
+    </p>
+  </div>
+</section>
+
+<!-- DOMAINES -->
+<section id="domaines">
+  <h2 class="section-title">Domaines de compétence</h2>
+  <p class="section-subtitle">Prise en charge complète en cardiologie</p>
+
+  <div class="card">
+    <ul class="domaines-list">
+      <li><span class="fr">ECG de repos et d'effort</span> <span class="ar" lang="ar">تسجيل تخطيط القلب أثناء الراحة و الجهد</span></li>
+      <li><span class="fr">Écho-Doppler cardiaque trans-thoracique et trans-œsophagien</span> <span class="ar" lang="ar">الفحص بالصدى للقلب عبر الصدر و المريء</span></li>
+      <li><span class="fr">Écho-Doppler vasculaire</span> <span class="ar" lang="ar">الفحص بالصدى للشرايين</span></li>
+      <li><span class="fr">Holter tensionnel (MAPA)</span> <span class="ar" lang="ar">تسجيل الضغط الدموي</span></li>
+      <li><span class="fr">Holter rythmique</span> <span class="ar" lang="ar">تخطيط القلب للمدى الطويل</span></li>
+      <li><span class="fr">Échocardiographie de stress (Effort, Dobutamine)</span> <span class="ar" lang="ar">الفحص بالصدى للقلب أثناء الجهد</span></li>
+      <li><span class="fr">IRM cardiaque</span> <span class="ar" lang="ar">تصوير القلب بالرنين المغناطيسي</span></li>
+      <li><span class="fr">Exploration du système nerveux autonome ( SNA)</span> <span class="ar" lang="ar">استكشاف الجهاز العصبي اللاإرادي</span></li>
+      <li><span class="fr">Coronarographie, angioplastie coronaire</span> <span class="ar" lang="ar">قسطرة و توسيع الشرايين التاجية</span></li>
+      <li><span class="fr">Cathétérisme cardiaque droit et gauche</span> <span class="ar" lang="ar">قسطرة القلب (الأيسر و الأيمن)</span></li>
+      <li><span class="fr">Réadaptation cardiaque</span> <span class="ar" lang="ar">إعادة التأهيل الوظيفي للقلب</span></li>
+      <li><span class="fr">Hypertension artérielle</span> <span class="ar" lang="ar">إرتفاع الضغط الدموي</span></li>
+      <li><span class="fr">Maladies coronaires</span> <span class="ar" lang="ar">أمراض الشرايين التاجية</span></li>
+      <li><span class="fr">Insuffisance cardiaque</span> <span class="ar" lang="ar">قصور القلب</span></li>
+      <li><span class="fr">Suivi post-infarctus</span> <span class="ar" lang="ar">متابعة ما بعد الجلطة القلبية</span></li>
+      <li><span class="fr">Bilan préopératoire</span> <span class="ar" lang="ar">الفحص ما قبل العمليات الجراحية</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- INFOS PRATIQUES -->
+<section id="infos">
+  <h2 class="section-title">Informations pratiques</h2>
+  <p class="section-subtitle">Adresse, contact et horaires d'ouverture</p>
+
+  <div class="infos-grid">
+    <div class="card">
+      <p>
+        <strong>Adresse :</strong><br>
+        Espace Bureaux EL GHALI, Bled Sehrij, Bureau N° 2, 1er étage.<br>
+        À côté de la Clinique El Qods et du Centre Régional d'Investissement, Fès.
+      </p>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Espace+Bureaux+EL+GHALI+Bled+Sehrij+Clinique+El+Qods+F%C3%A8s" target="_blank" rel="noopener">
+        📍 Ouvrir dans Google Maps
+      </a>
+    </div>
+
+    <div class="card">
+      <p>
+        <strong>Téléphone :</strong> <a class="contact-link" href="tel:+212535930161">05 35 93 01 61</a><br>
+        <strong>GSM :</strong> <a class="contact-link" href="tel:+212767902659">07 67 90 26 59</a><br>
+        <strong>Email :</strong> <a class="contact-link" href="mailto:nadaelkhorb@gmail.com">nadaelkhorb@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="card">
+      <p>
+        <strong>Horaires :</strong><br>
+        Lundi – Jeudi : 08h00 – 18h00<br>
+        Vendredi : 08h00 – 12h00 et 14h00 – 18h00<br>
+        Samedi : 08h00 – 14h00<br>
+        <em>(Sur rendez-vous, sauf urgence)</em>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2 class="section-title">Contact &amp; localisation</h2>
+
+  <div class="card">
+    <p>
+      Pour toute demande de rendez-vous ou de renseignement :<br><br>
+      📞 <a class="contact-link" href="tel:+212535930161">05 35 93 01 61</a>
+      ou <a class="contact-link" href="tel:+212767902659">07 67 90 26 59</a><br>
+      ✉️ <a class="contact-link" href="mailto:nadaelkhorb@gmail.com">nadaelkhorb@gmail.com</a>
+    </p>
+
+    <hr style="margin:20px 0; border:none; border-top:1px solid #ddd;">
+
+    <p>
+      <strong>Localisation :</strong><br>
+      Espace Bureaux EL GHALI, 1er étage, Bled Sehrij, Fès<br>
+      (à côté de la Clinique El Qods et du Centre Régional d'Investissement)
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© <span id="year"></span> Cabinet de Cardiologie – Pr Nada EL KHORB.</span>
+  <a href="#accueil">Retour en haut</a>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
