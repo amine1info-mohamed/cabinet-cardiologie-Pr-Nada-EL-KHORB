@@ -10,7 +10,16 @@
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#b3003c">
   <!-- Remplacer par l'URL finale du site une fois hébergé -->
-  <link rel="canonical" href="https://www.example.com/">
+  <!-- URL officielle du site (canonical) -->
+  <link rel="canonical" href="https://amine1info-mohamed.github.io/Dr-Nada-EL-KHORB-Professeur-en-Cardiologie-Cardiologue-interventionnelle/">
+
+  <!-- Verification Google Search Console (double securite avec le fichier HTML) -->
+  <meta name="google-site-verification" content="df1674973b830fbd">
+
+  <!-- Ciblage geographique local -->
+  <meta name="geo.region" content="MA-FES">
+  <meta name="geo.placename" content="Fès">
+  <meta name="keywords" content="cardiologue Fès, cardiologie Fès, professeur cardiologie Fès, échocardiographie Fès, ECG Fès, test d'effort Fès, Holter Fès, coronarographie Fès, angioplastie Fès, طبيب القلب فاس, أخصائي أمراض القلب فاس">
 
   <!-- Partage réseaux sociaux (Open Graph) -->
   <meta property="og:type" content="website">
@@ -36,10 +45,31 @@
     "email": "nadaelkhorb@gmail.com",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Espace Bureaux EL GHALI, Bureau N° 2, 1er étage, Bled Sehrij",
+      "streetAddress": "Espace Bureaux El Ghali, Étage 1, Bureau N°2, Avenue Taha Houceine, Bled Sahrij",
       "addressLocality": "Fès",
+      "postalCode": "30000",
       "addressCountry": "MA"
     },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "34.0331",
+      "longitude": "-5.0003"
+    },
+    "areaServed": { "@type": "City", "name": "Fès" },
+    "availableService": [
+      { "@type": "MedicalProcedure", "name": "ECG de repos et d'effort" },
+      { "@type": "MedicalProcedure", "name": "Écho-Doppler cardiaque trans-thoracique" },
+      { "@type": "MedicalProcedure", "name": "Écho-Doppler cardiaque trans-œsophagien" },
+      { "@type": "MedicalProcedure", "name": "Écho-Doppler vasculaire" },
+      { "@type": "MedicalProcedure", "name": "Holter tensionnel (MAPA)" },
+      { "@type": "MedicalProcedure", "name": "Holter rythmique" },
+      { "@type": "MedicalProcedure", "name": "Échocardiographie de stress" },
+      { "@type": "MedicalProcedure", "name": "IRM cardiaque" },
+      { "@type": "MedicalProcedure", "name": "Coronarographie et angioplastie coronaire" },
+      { "@type": "MedicalProcedure", "name": "Cathétérisme cardiaque" },
+      { "@type": "MedicalProcedure", "name": "Réadaptation cardiaque" },
+      { "@type": "MedicalProcedure", "name": "Suivi de l'hypertension artérielle" }
+    ],
     "openingHoursSpecification": [
       { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "08:00", "closes": "18:00" },
       { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "12:00" },
@@ -429,8 +459,8 @@
     </p>
 
     <div class="hero-actions">
-      <a class="btn-primary" href="#contact">Demander un rendez-vous</a>
-      <a class="btn-outline" href="#video-cabinet">Voir la vidéo du cabinet</a>
+      <a class="btn-primary" href="tel:+212535930161">📞 Appeler le cabinet</a>
+      <a class="btn-outline" href="https://wa.me/212767902659?text=Bonjour%2C%20je%20souhaite%20prendre%20rendez-vous%20au%20cabinet%20du%20Pr%20EL%20KHORB." target="_blank" rel="noopener">Rendez-vous par WhatsApp</a>
     </div>
   </div>
 
@@ -557,6 +587,46 @@
       Espace Bureaux EL GHALI, 1er étage, Bled Sehrij, Fès<br>
       (à côté de la Clinique El Qods et du Centre Régional d'Investissement)
     </p>
+
+    <p style="margin-top:14px;">
+      <a href="https://www.google.com/maps/search/?api=1&query=Clinique+Al+Qods+Bled+Sahrij+Fes"
+         target="_blank" rel="noopener"
+         style="color:var(--primary); font-weight:600;">
+         🗺️ Ouvrir l'itinéraire dans Google Maps →
+      </a><br>
+      <span style="color:var(--muted); font-size:0.9rem;">Parking disponible – Accès facile</span>
+    </p>
+
+    <!-- ====== CARTE GOOGLE MAPS ======
+         Une fois la fiche Google Business Profile VERIFIEE :
+         Google Maps -> chercher le cabinet -> Partager -> Integrer une carte
+         -> coller le <iframe> ici, a la place de ce commentaire.
+    -->
+  </div>
+</section>
+
+<!-- ====== AVIS PATIENTS — LEVIER DE CLASSEMENT N°1 ====== -->
+<section id="avis">
+  <h2 class="section-title">Votre avis compte</h2>
+  <p class="section-subtitle">Aidez d'autres patients de Fès à trouver le cabinet</p>
+
+  <div class="card" style="text-align:center;">
+    <p style="margin-bottom:18px;">
+      Si votre consultation s'est bien déroulée, votre témoignage aide les patients
+      à s'orienter. Une minute suffit.
+    </p>
+    <p style="margin-bottom:18px; color:var(--muted);" dir="rtl">
+      إذا كنت راضياً عن استشارتك، فإن رأيك يساعد مرضى فاس على العثور على العيادة.
+    </p>
+
+    <!-- REMPLACER par le lien fourni par Google Business Profile
+         (Fiche Google -> Demander des avis -> copier le lien) -->
+    <a class="btn-primary"
+       href="LIEN_AVIS_GOOGLE_A_COLLER_ICI"
+       target="_blank" rel="noopener"
+       style="display:inline-block;">
+      ⭐ Laisser un avis sur Google
+    </a>
   </div>
 </section>
 
