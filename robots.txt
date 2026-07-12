@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://amine1info-mohamed.github.io/cabinet-cardiologie-Pr-Nada-EL-KHORB/sitemap.xml
+Sitemap: https://amine1info-mohamed.github.io/Dr-Nada-EL-KHORB-Professeur-en-Cardiologie-Cardiologue-interventionnelle/sitemap.xml
