@@ -350,6 +350,47 @@
       font-size: 0.9rem;
     }
 
+    .avis-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 220px;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .avis-texte {
+      text-align: center;
+    }
+
+    .avis-qr {
+      text-align: center;
+      padding-left: 28px;
+      border-left: 1px solid #eadde2;
+    }
+
+    .avis-qr-link {
+      display: inline-block;
+      padding: 10px;
+      border: 2px solid var(--primary);
+      border-radius: 16px;
+      background: #fff;
+      box-shadow: 0 6px 16px rgba(179,0,60,0.16);
+    }
+
+    .avis-qr-link img {
+      display: block;
+      width: 170px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .avis-qr-label {
+      margin-top: 10px;
+      color: var(--dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      line-height: 1.35;
+    }
+
     footer {
       padding: 18px 8% 22px;
       font-size: 0.8rem;
@@ -405,6 +446,20 @@
       .hero { padding-top: 28px; }
 
       .cabinet-video { max-height: 520px; }
+
+      .avis-card {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .avis-qr {
+        padding-top: 24px;
+        padding-left: 0;
+        border-top: 1px solid #eadde2;
+        border-left: none;
+      }
+
+      .avis-qr-link img { width: 180px; }
     }
   </style>
 </head>
@@ -610,23 +665,35 @@
   <h2 class="section-title">Votre avis compte</h2>
   <p class="section-subtitle">Aidez d'autres patients de Fès à trouver le cabinet</p>
 
-  <div class="card" style="text-align:center;">
-    <p style="margin-bottom:18px;">
-      Si votre consultation s'est bien déroulée, votre témoignage aide les patients
-      à s'orienter. Une minute suffit.
-    </p>
-    <p style="margin-bottom:18px; color:var(--muted);" dir="rtl">
-      إذا كنت راضياً عن استشارتك، فإن رأيك يساعد مرضى فاس على العثور على العيادة.
-    </p>
+  <div class="card avis-card">
+    <div class="avis-texte">
+      <p style="margin-bottom:18px;">
+        Si votre consultation s'est bien déroulée, votre témoignage aide les patients
+        à s'orienter. Une minute suffit.
+      </p>
+      <p style="margin-bottom:18px; color:var(--muted);" dir="rtl">
+        إذا كنت راضياً عن استشارتك، فإن رأيك يساعد مرضى فاس على العثور على العيادة.
+      </p>
 
-    <!-- REMPLACER par le lien fourni par Google Business Profile
-         (Fiche Google -> Demander des avis -> copier le lien) -->
-    <a class="btn-primary"
-       href="https://www.google.com/search?q=Prof.+Nada+El+Khorb+F%C3%A8s&amp;ludocid=16565539605583047187#lrd=0xd9f8b0069967f5b:0xe5e49e80d7712a13,3,,,"
-       target="_blank" rel="noopener"
-       style="display:inline-block;">
-      ⭐ Laisser un avis sur Google
-    </a>
+      <a class="btn-primary"
+         href="https://www.google.com/search?q=Prof.+Nada+El+Khorb+F%C3%A8s&amp;ludocid=16565539605583047187#lrd=0xd9f8b0069967f5b:0xe5e49e80d7712a13,3,,,"
+         target="_blank" rel="noopener">
+        ⭐ Laisser un avis sur Google
+      </a>
+    </div>
+
+    <div class="avis-qr">
+      <a class="avis-qr-link"
+         href="https://www.google.com/search?q=Prof.+Nada+El+Khorb+F%C3%A8s&amp;ludocid=16565539605583047187#lrd=0xd9f8b0069967f5b:0xe5e49e80d7712a13,3,,,"
+         target="_blank" rel="noopener"
+         aria-label="Ouvrir la page Google pour laisser un avis">
+        <img src="qr_avis_google.png"
+             alt="QR code pour laisser un avis Google au Pr Nada EL KHORB"
+             width="170" height="170"
+             loading="lazy">
+      </a>
+      <p class="avis-qr-label">Scannez pour laisser un avis</p>
+    </div>
   </div>
 </section>
 
